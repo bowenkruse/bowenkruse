@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSCI127 Programming Practice</title>
+    {# Google fonts #}
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+          rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+<!-- ======= Header ======= -->
+<header id="header">
+    <div class="d-flex flex-column">
+        <div class="profile">
+            <img src="{% static 'images/Profile.jpg' %}" alt="" class="side-image">
+            <h1 class="text-light"><a href="">Bowen Kruse</a></h1>
+        </div>
+
+        <nav id="navbar" class="nav-menu navbar">
+            <ul>
+                <li><a href="{% url 'index' %}" class="nav-link scrollto active"><i class="bx bx-home"></i>
+                    <span>Home</span></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="main">
+    <section id="wumpus" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>"Patience you must have my young Padawan" - Abraham Lincoln</h2>
+            </div>
+            <div class="row">
+                <div class="side">
+                    <h4>Uno</h4>
+                    <p>Write a Python class called Converter that has two functions, one to convert an integer to a
+                        roman numeral and second that converts the integer and converts it to the spelling of that said
+                    number (1 becomes "one"). On initialization, this class should take one parameter: the integer to be
+                    translated. </p>
+                </div>
+                <div class="main_column">
+                    <h4>Click for solution</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="main_column">
+                    <h4>Dos</h4>
+                    <p>Write a function that takes a string as a parameter, and ensures that any uses of parenthesis or
+                    quotations are properly terminated i.e. each opening quote needs an ending quote etc.</p>
+                </div>
+
+                <div class="side">
+                    <h4>Click for solution</h4>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>

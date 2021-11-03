@@ -1,0 +1,381 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bowen Kruse</title>
+    {# Google fonts #}
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+          rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+</head>
+
+<body>
+
+<!-- ======= Header ======= -->
+<header id="header">
+    <div class="d-flex flex-column">
+
+        <div class="profile">
+            <img src="{% static 'images/Profile.jpg' %}" alt="" class="side-image">
+            <h1 class="text-light"><a href="#hero">Bowen Kruse</a></h1>
+
+        </div>
+
+        <nav id="navbar" class="nav-menu navbar">
+            <ul>
+                <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a>
+                </li>
+                <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+                <li><a href="#projects" class="nav-link scrollto"><i class="bx bx-book-content"></i>
+                    <span>Projects</span></a></li>
+                <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a>
+                </li>
+                <li><a href="{% url 'onetwoseven' %}" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>For my students</span></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+        <h1>bowen kruse</h1>
+    </div>
+</section>
+
+<div class="main">
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About</h2>
+                <div class="row">
+                    <div class="side">
+                        <h4>Background</h4>
+                        <p>I’m a Senior at Montana State University studying Computer Science, with a background in pure
+                            mathematics, and applied aviation sciences. I’ve successfully lead teams in numerous global
+                            coding competitions on three continents. I’ve also been an active member of ACM and IEEE
+                            since 2017.</p>
+                    </div>
+
+                    <div class="main_column">
+                        <h4>Experience</h4>
+                        <p>Data driven solutions are the future and will continue to define our industry. With hundreds
+                            of hours logged
+                            as a private pilot, I’ve gained an appreciation for the technology required to enable the
+                            world to function. I’ve worked in multiple law-related establishments and learned to seek
+                            out new ways to apply technology to increase efficiency and create solutions for a variety
+                            of industries. There is always a way to use data to work smarter.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="side">
+                        <h4>BNSF Railway Intern - Application Development</h4>
+                        <p>
+                            Developed computer vision models using the amazing Cogniac platform to detect instances of
+                            damage on train wheels. Developed python programs to analyze possible causes of detection
+                            imbalances from existing models.
+                        </p>
+                        <p>
+                            Built a highly dynamic development landscape timeline web application using the Django
+                            Framework. Data was pulled in Using RESTful APIs and utilized recursive descent parsing as
+                            well as SQLite databases to power an extremely fast back-end.
+                        </p>
+                        <p>
+                            Used Power BI to detect and display relationships between project and maintenance events in
+                            the SAP development landscape.
+                        </p>
+
+                        <p>
+                            Developed a ServiceNow application to automate a previously bothersome manual task regarding
+                            change requests in the SAP domain.
+                        </p>
+
+                    </div>
+
+                    <div class="main_column">
+                        <h4>Undergraduate Teach Assistant</h4>
+                        <p>
+                            Leading labs and respective instruction
+                        </p>
+                        <p>
+                            Hosting private tutoring sessions in addition to office hours and practicum review sessions
+                        </p>
+                        <h6>'Joy and Beauty of Data' Course Description:</h6>
+                        <p>
+                            "Provides a gentle introduction to the exciting world of big data and data science. Students
+                            expand their ability to solve problems with Python by learning to deploy lists, files,
+                            dictionaries and object-oriented programming. Data science libraries are introduced that
+                            enable data to be manipulated and displayed."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row" style="background-color: rgba(20,157,221,0.38)">
+                    <div class="col-1">
+                        <h3 style="text-align: center">Languages</h3>
+                        <ul class="list-inline">
+                            <li>Python</li>
+                            <li>Golang</li>
+                            <li>Java</li>
+                            <li>C/C++</li>
+                            <li>Swift</li>
+                            <li>Javascript</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-1">
+                        <h3 style="text-align: center">Concepts</h3>
+                        <ul class="list-inline">
+                            <li>Object Orientated Programming</li>
+                            <li>Computer Vision</li>
+                            <li>AI/ML Concepts</li>
+                            <li>Computational Theory</li>
+                            <li>Complexity Analysis</li>
+                            <li>Virtualization</li>
+                            <li>Embedded Systems</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-1">
+                        <h3 style="text-align: center">Tools</h3>
+                        <ul class="list-inline">
+
+                            <li>Docker</li>
+                            <li>Git & Github</li>
+                            <li>Kubernetes</li>
+                            <li>AWS</li>
+                            <li>Jira</li>
+                            <li>Jupyter</li>
+                            <li>Power BI</li>
+                            <li>ServiceNow</li>
+
+                        </ul>
+                    </div>
+                    <div class="col-1">
+                        <h3 style="text-align: center">Professional Certifications</h3>
+                        <ul class="list-inline">
+
+                            <li>Private pilot with instrument and multi-engine rating</li>
+                            <li>IBM Applied AI Professional</li>
+                            <li>Google IT Support Professional</li>
+                            <li>TensorFlow Developer - In progress</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="portfolio section-bg">
+        <div class="container">
+            <div class="section-title">
+                <h2>Projects</h2>
+                <p>This is a collection of select projects I've been involved with. Some projects have
+                    live demos available.</p>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h5>SAP Development Landscape Timeline web application</h5>
+                    <p>
+                        As an intern as BNSF Railway, I designed and created the full stack of a Flask web application
+                        that showed relationships between projects and events such as maintenance events or outages. All
+                        information was pulled from a SharePoint list using SharePoint's rest API and utilized recursive
+                        descent parsing along with SQLite databases to power it's rather fast backend. Working with
+                        server-less databases was a refreshing experience. The highly dynamic web app utilized
+                        Timeline.js to create an incredibly dynamic timeline with one of kind scaling and scrolling
+                        capabilities.
+                    </p>
+                </div>
+                <div class="col-2">
+                    <h5>ML model to detect instances of damage on train wheels</h5>
+                    <p>
+                        Working on the BNSF Railway Midas (Mechanical Image Driven Analytics System) under the guidance
+                        of Coleman Barkely I Developed computer vision deep learning models using the amazing Cogniac
+                        Corporation platform to detect instances of damage on portions of train wheels that existing
+                        models were struggling to identify. Being able to combine my passions for machine learning and
+                        computer vision was amazing.
+                    </p>
+                    <p>
+                        Like many computer vision applications, my project started with understanding how the images
+                        were captured and processed might affect models created from the data. I then created python
+                        programs to analyze possible causes of detection imbalances from existing models and presented
+                        my findings. My data research lead to real conversation and change the image capturing system
+                        and my models continued training with hopes for deployment after the end of my internship.
+                    </p>
+                </div>
+                <div class="col-2">
+                    <h5>Change Request Automation ServiceNow Application</h5>
+                    <p>
+                        Using the ServiceNow platform, I collaborated with a fellow intern to create a web application
+                        that automated the creation and approval of emergency change requests within the SAP development
+                        landscape. This application would replace what was previously hundreds of emails each week, and
+                        decreased required user input fields by 38%.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    <h5>Google Hash Code 2020</h5>
+                    <p>
+                        At the Google Hash Code 2020 Sharjah Hub, I put together a team of four fellow students, that
+                        collectively were from three different continents, and spoke five languages. I implemented a
+                        series of miniature scrum sprints in order to better structure our team’s efforts and also
+                        delegated tasks between team members as needed in order to mitigate issues that arose from
+                        conflicting approaches and preferences in programming languages. My 2020 team finished with
+                        20,967,384 points in the 62 percentile of all 10,724 global competitors with two unique
+                        solutions I was very proud of.
+                    </p>
+                </div>
+                <div class="col-2">
+                    <h5>United Arab Emirates Hackathon 2020</h5>
+                    <p>
+                        The United Arab Emirates Hackathon was a unique event for me, as it did not focus on programming
+                        solutions or other standard hackathon outcomes. Instead, the goal was to develop solutions and
+                        innovative ideas that would contribute to actual issues that the various communities of the UAE
+                        were facing under the competition motto: ‘Data for Happiness and Well-being’. I created a
+                        proposed solution to traffic congestion between emirates that utilized automated smart corridors
+                        and a Self-Adaptive Traffic Signal system based on real-time data. I also created a beta version
+                        of a Transit App feature that allowed users to plan routes within and between emirates using all
+                        available types of public transportation between destinations.
+                    </p>
+                </div>
+                <div class="col-2">
+                    <h5>BattleBit</h5>
+                    <p>
+                        BattleBit is a game of Battle Ship programmed in C played on a local or remote server, where the
+                        game boards are unsigned 64-bit integers (8 by 8 board). Players can fire at each other, message
+                        one another, and print the board at any time.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h5>Bo the Chatbot</h5>
+                    <p>
+                        Bo the Chatbot, who hopefully you’re now familiar with, is powered by IBM Watson. Using Watson’s
+                        Discovery, Tone Analyzer, Assistant, and Natural Language Understanding for processing and
+                        analysis, Bo can answer most of the questions that reading through the entire site could. Bo
+                        will continue to grow and learn as the complexity of his algorithm increases. Give Bo the
+                        Chatbot a try at the bottom left corner of the site.
+                    </p>
+                </div>
+                <div class="col-2">
+                    <h5>BioCalc</h5>
+                    <p>
+                        <a href="{% url 'biocalc' %}">Demo</a>
+                    </p>
+                </div>
+                <div class="col-2">
+                    <h5>WeSync</h5>
+                    <p>
+                        In progress ...
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h5>This website</h5>
+                    <p>
+                        <a href="{% url 'index' %}">Demo</a>
+                    </p>
+                </div>
+                <div class="col-2">
+                    <h5> PressureSpot</h5>
+                    <p>
+                        In progress ...
+                    </p>
+                </div>
+                <div class="col-2">
+                    <h5>ASLText</h5>
+                    <p>
+                        In progress ...
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h5>Sudoku Solver</h5>
+                    <p>
+                        <a href="{% url 'sudoku' %}">Learn more</a>
+                    </p>
+                </div>
+                <div class="col-2">
+                    <h5>Tik-Tac-told</h5>
+                    <p>
+                        <a href="{% url 'ticktacktoe' %}">Demo</a>
+                    </p>
+                </div>
+                <div class="col-2">
+                    <h5>Wumpus world implementation</h5>
+                    <p>
+                        <a href="{% url 'wumpus' %}">Learn more</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Contact</h2>
+                <p>Feel free to get in touch with me at anytime using any of the methods below.</p>
+            </div>
+
+            <div class="row" data-aos="fade-in">
+
+                <div class="col-lg-5 d-flex align-items-stretch">
+                    <div class="info">
+                        <div class="email">
+                            <i class="bi bi-envelope"></i>
+                            <h4>Email (Standard):</h4>
+                            <p>bokruse 1998 @ gmail.com</p>
+                        </div>
+
+                        <div class="email">
+                            <i class="bi bi-envelope"></i>
+                            <h4>Email (Secure):</h4>
+                            <p>platitude@protonmail.com</p>
+                        </div>
+
+                        <div class="phone">
+                            <i class="bi bi-phone"></i>
+                            <h4>Call or text:</h4>
+                            <p>+1 406 465 1399</p>
+                        </div>
+
+                        <div class="email">
+                            <i class="bi bi-envelope"></i>
+                            <h4>My Github:</h4>
+                            <p><a href="https://github.com/bowenkruse">bowenkruse</a></p>
+                        </div>
+
+
+                        <div class="email">
+                            <i class="bi bi-envelope"></i>
+                            <h4><a href="https://www.linkedin.com/in/bowen-kruse-b04364196/"> Or add me on LinkedIn</a>
+                            </h4>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Contact Section -->
+
+</div>
+</body>
+</html>

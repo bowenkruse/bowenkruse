@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wumpus World</title>
+    {# Google fonts #}
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+          rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+<!-- ======= Header ======= -->
+<header id="header">
+    <div class="d-flex flex-column">
+
+        <div class="profile">
+            <img src="{% static 'images/Profile.jpg' %}" alt="" class="side-image">
+            <h1 class="text-light"><a href="">Bowen Kruse</a></h1>
+
+        </div>
+
+        <nav id="navbar" class="nav-menu navbar">
+            <ul>
+                <li><a href="{% url 'index' %}" class="nav-link scrollto active"><i class="bx bx-home"></i>
+                    <span>Home</span></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="main">
+    <section id="wumpus" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>The Wumpus World</h2>
+            </div>
+            <div class="row">
+                <div class="side">
+                    <h4>What is the Wumpus world?</h4>
+                    <p>The Wumpus world is a simple world used to demonstrate the powers and behaviors of
+                        knowledge-based agents. A Wumpus world is a cave, represented by a square matrix, in which
+                        agents must avoid monsters and deadly obstacles in their pursuit of gold</p>
+                </div>
+                <div class="main_column">
+                    <img src="{% static 'images/wumpus.png' %}" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="main_column">
+                    <img src="{% static 'images/wumpusuml.jpeg' %}" alt="" width="95%">
+                </div>
+
+                <div class="side">
+                    <h4>Our Wumpus world implementation</h4>
+                    <p>During the Fall of 2021, my team and I collaborated to create this project for a course at
+                        Montana State University: CSCI 446 Artificial Intelligence. Our solution was developed in Python
+                        and implemented two types of agents: one that used first order logic and a knowledge base
+                        and one that was a simple
+                        reactionary agent.</p>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="side">
+                    <h4>Results</h4>
+                    <p>Using five different cave sizes and ten different placement probabilities for the Wumpus
+                        world obstacles, 25,000 tests were run to find that our hypothesis: "that the knowledge base would
+                        allow the smart agent to succeed more frequently than simple agent; however, the high-risk
+                        high-reward nature of the reflex agent would allow the simple agent to succeed or fail
+                        faster,” was correct. </p>
+                </div>
+                <div class="main_column">
+                    <img src="{% static 'images/wumpusresults.png' %}" alt="" width="95%">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+</div>
+
+</body>
+</html>

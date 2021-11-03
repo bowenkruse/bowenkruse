@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bowen Kruse</title>
+    {# Google fonts #}
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+          rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+<!-- ======= Header ======= -->
+<header id="header">
+    <div class="d-flex flex-column">
+
+        <div class="profile">
+            <img src="{% static 'images/Profile.jpg' %}" alt="" class="side-image">
+            <h1 class="text-light"><a href="#hero">Bowen Kruse</a></h1>
+
+        </div>
+
+        <nav id="navbar" class="nav-menu navbar">
+            <ul>
+                <li><a href="{% url 'index' %}" class="nav-link scrollto active"><i class="bx bx-home"></i>
+                    <span>Home</span></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="main">
+    <section id="wumpus" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>bioCalc</h2>
+            </div>
+            <div class="row">
+                <div class="side">
+                    <h4>What is bioCalc?</h4>
+                    <p>bioCalc is the implementation of some of the most common data-structures and algorithms in
+                        bioinformatics including Z, suffix trees, KMP, Needleman-Wunsch, and
+                        Smith-Waterman</p>
+                </div>
+                <div class="main_column">
+                    <img src="{% static 'images/bioinformatics-data-science-venn-diagrams.png' %}" alt="" width="95%">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="side">
+                    <h4>The Z algorithm:</h4>
+                    <p>The Z algorithm finds all occurrences of a pattern in a text in LINEAR TIME!
+                        This of course is thus very useful in the world of bioinformatics. To the right,
+                        simply enter in your string, and pattern that you wish to find within it.</p>
+                </div>
+                <div class="main_column">
+                    <h4>Implementation</h4>
+                    <form action="" method="get">
+                        <label for="string_s">Enter S: </label>
+                        <input id="string_s" type="text" name="name_field" value="String to search">
+                        <input type="submit" value="OK">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
