@@ -32,3 +32,7 @@ def uxwork(request):
 
 def wesyncUX(request):
     return render(request, 'weSyncUX.html')
+
+
+def underconstruction(request):
+    return render(request, 'construction.html')

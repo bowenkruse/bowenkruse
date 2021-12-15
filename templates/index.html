@@ -9,6 +9,9 @@
           rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{% static 'bowenkruse/css/styles.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/jpeg" href="{% static 'bowenkruse/images/favicon.jpg' %}"
+
 
 </head>
 
@@ -26,14 +29,17 @@
 
         <nav id="navbar" class="nav-menu navbar">
             <ul>
-                <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a>
+                <li><a href="#hero" class="nav-link scrollto"><i class="bx bx-home fa fa-home"></i>
+                    <span>Home</span></a>
                 </li>
-                <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-                <li><a href="#projects" class="nav-link scrollto"><i class="bx bx-book-content"></i>
+                <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user fa fa-address-card"></i>
+                    <span>About</span></a></li>
+                <li><a href="#projects" class="nav-link scrollto"><i class="bx bx-book-content fa fa-cloud"></i>
                     <span>Projects</span></a></li>
-                <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a>
+                <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope fa fa-envelope"></i> <span>Contact</span></a>
                 </li>
-                <li><a href="{% url 'onetwoseven' %}" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>For my students</span></a>
+                <li><a href="{% url 'onetwoseven' %}" class="nav-link scrollto"><i
+                        class="bx bx-envelope fa fa-graduation-cap"></i> <span>For my students</span></a>
                 </li>
             </ul>
         </nav>
@@ -51,11 +57,12 @@
     <section id="about" class="about">
         <div class="container">
             <div class="section-title">
-                <h2>About</h2>
+                <h2 class="fa fa-address-card"> About</h2>
                 <div class="row">
                     <div class="side">
                         <h4>Background</h4>
-                        <p>I’m a Senior at Montana State University studying Computer Science, with a background in pure
+                        <p>I’m a graduate of Montana State University having studied Computer Science and incoming
+                            management trainee at BNSF, with a background in pure
                             mathematics, and applied aviation sciences. I’ve successfully led teams in numerous global
                             coding competitions on three continents. I’ve also been an active member of ACM and IEEE
                             since 2017.</p>
@@ -113,7 +120,7 @@
                 </div>
 
                 <div class="row" style="background-color: rgba(20,157,221,0.38)">
-                    <div class="col-1">
+                    <div class="col-1" style="font-size: 20px;">
                         <h3 style="text-align: center">Languages</h3>
                         <ul class="list-inline">
                             <li>Python</li>
@@ -127,7 +134,7 @@
 
                     <div class="col-1">
                         <h3 style="text-align: center">Concepts</h3>
-                        <ul class="list-inline">
+                        <ul class="list-inline" style="font-size: 20px;">
                             <li>Object Orientated Programming</li>
                             <li>Computer Vision</li>
                             <li>AI/ML Concepts</li>
@@ -140,7 +147,7 @@
 
                     <div class="col-1">
                         <h3 style="text-align: center">Tools</h3>
-                        <ul class="list-inline">
+                        <ul class="list-inline" style="font-size: 20px;">
 
                             <li>Docker</li>
                             <li>Git & Github</li>
@@ -155,8 +162,7 @@
                     </div>
                     <div class="col-1">
                         <h3 style="text-align: center">Professional Certifications</h3>
-                        <ul class="list-inline">
-
+                        <ul class="list-inline" style="font-size: 20px;">
                             <li>Private pilot with instrument and multi-engine rating</li>
                             <li>IBM Applied AI Professional</li>
                             <li>Google IT Support Professional</li>
@@ -172,13 +178,15 @@
     <section id="projects" class="portfolio section-bg">
         <div class="container">
             <div class="section-title">
-                <h2>Projects</h2>
+                <h2 class="fa fa-cloud"> Projects</h2>
                 <p>This is a collection of select projects I've been involved with. Some projects have
                     live demos available.</p>
+                <p style="font-size: 15px">Following each project title is a list of skills, tools, or concepts
+                    utilized in the respective project.</p>
             </div>
             <div class="row">
                 <div class="col-2">
-                    <h5>SAP Development Landscape Timeline web application</h5>
+                    <h5>Development Landscape Timeline - Web app development, API work, AWS</h5>
                     <p>
                         As an intern as BNSF Railway, I designed and created the full stack of a Flask web application
                         that showed relationships between projects and events such as maintenance events or outages. All
@@ -190,7 +198,7 @@
                     </p>
                 </div>
                 <div class="col-2">
-                    <h5>ML model to detect instances of damage on train wheels</h5>
+                    <h5>ML model to detect instances of damage on train wheels - Machine learning, computer vision</h5>
                     <p>
                         Working on the BNSF Railway Midas (Mechanical Image Driven Analytics System) under the guidance
                         of Coleman Barkely I Developed computer vision deep learning models using the amazing Cogniac
@@ -207,7 +215,7 @@
                     </p>
                 </div>
                 <div class="col-2">
-                    <h5>Change Request Automation ServiceNow Application</h5>
+                    <h5>Change Request Automation ServiceNow Application - ServiceNow development, automation</h5>
                     <p>
                         Using the ServiceNow platform, I collaborated with a fellow intern to create a web application
                         that automated the creation and approval of emergency change requests within the SAP development
@@ -219,7 +227,7 @@
 
             <div class="row">
                 <div class="col-2">
-                    <h5>Google Hash Code 2020</h5>
+                    <h5>Google Hash Code 2020 - Agile, leadership, advanced algorithms</h5>
                     <p>
                         At the Google Hash Code 2020 Sharjah Hub, I put together a team of four fellow students, that
                         collectively were from three different continents, and spoke five languages. I implemented a
@@ -231,7 +239,8 @@
                     </p>
                 </div>
                 <div class="col-2">
-                    <h5>United Arab Emirates Hackathon 2020</h5>
+                    <h5>United Arab Emirates Hackathon 2020 - User centered design, automation, leadership, mobile
+                        development</h5>
                     <p>
                         The United Arab Emirates Hackathon was a unique event for me, as it did not focus on programming
                         solutions or other standard hackathon outcomes. Instead, the goal was to develop solutions and
@@ -244,17 +253,16 @@
                     </p>
                 </div>
                 <div class="col-2">
-                    <h5>BattleBit</h5>
-                    <p>
-                        BattleBit is a game of Battle Ship programmed in C played on a local or remote server, where the
-                        game boards are unsigned 64-bit integers (8 by 8 board). Players can fire at each other, message
-                        one another, and print the board at any time.
+                    <h5>Reinforcement learning from scratch - Machine learning</h5>
+                    <p>Utilizing two elementary Reinforcement learning algorithms, Value Iteration and Q-learning,
+                        from scratch to move a simulated car around a series of tracks.
                     </p>
+                    <a href="{% url 'underconstruction' %}">Learn more</a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-2">
-                    <h5>Bo the Chatbot</h5>
+                    <h5>Bo the Chatbot - chatbot development, NLP, machine learning, web app development</h5>
                     <p>
                         Bo the Chatbot, who hopefully you’re now familiar with, is powered by IBM Watson. Using Watson’s
                         Discovery, Tone Analyzer, Assistant, and Natural Language Understanding for processing and
@@ -264,10 +272,11 @@
                     </p>
                 </div>
                 <div class="col-2">
-                    <h5>BioCalc</h5>
-                    <p>
-                        <a href="{% url 'biocalc' %}">Demo</a>
+                    <h5>BioCalc - bioinformatics, advanced algorithms</h5>
+                    <p> Interactive implementations of some the most foundational data structures and algorithms
+                        in bioinformatics such as the z-algorithm.
                     </p>
+                    <a href="{% url 'underconstruction' %}">Demo</a>
                 </div>
                 <div class="col-2">
                     <h5>WeSync - UX/UI Design and Web Development</h5>
@@ -279,22 +288,24 @@
                         courses, join groups in courses, message other users, and more. This prototype will not be
                         developed any further.
                     </p>
-                    <a href="http://wesync-django-env4.eba-s3uhhsqf.us-west-2.elasticbeanstalk.com/login/">Demo</a> or <a href="{% url 'wesyncUX' %}">Learning more about the design process</a>
+                    <a href="http://wesync-django-env4.eba-s3uhhsqf.us-west-2.elasticbeanstalk.com/login/">Demo</a> or
+                    <a href="{% url 'wesyncUX' %}">Learning more about the design process</a>
 
                 </div>
             </div>
             <div class="row">
                 <div class="col-2">
-                    <h5>This website</h5>
-                    <p>
-                        <a href="{% url 'index' %}">Demo</a>
+                    <h5>This website - web app development, UX/UI Design, AWS, Docker</h5>
+                    <p>Does this count as recursion?
                     </p>
+                    <a href="{% url 'index' %}">Demo</a>
                 </div>
                 <div class="col-2">
-                    <h5> PressureSpot</h5>
-                    <p>
-                        In progress ...
+                    <h5>CareerSync - UX/UI Design process</h5>
+                    <p> A prototype platform where users can generate new resume's, track application
+                        progress, and take advantage of other job hunting related tools.
                     </p>
+                    <a href="{% url 'uxwork' %}">Learn more about the process</a>
                 </div>
                 <div class="col-2">
                     <h5>ASLText</h5>
@@ -307,13 +318,13 @@
                 <div class="col-2">
                     <h5>Sudoku Solver</h5>
                     <p>
-                        <a href="{% url 'sudoku' %}">Learn more</a>
+                        <a href="{% url 'underconstruction' %}">Learn more</a>
                     </p>
                 </div>
                 <div class="col-2">
                     <h5>Tik-Tac-told</h5>
                     <p>
-                        <a href="{% url 'ticktacktoe' %}">Demo</a>
+                        <a href="{% url 'underconstruction' %}">Demo</a>
                     </p>
                 </div>
                 <div class="col-2">
@@ -326,16 +337,10 @@
 
             <div class="row">
                 <div class="col-2">
-                    <h5>CareerSync - UX/UI Design</h5>
-                    <p>
-                        <a href="{% url 'uxwork' %}">Learn more about the process</a>
-                    </p>
+
                 </div>
                 <div class="col-2">
-                    <h5>Reinforcement learning from scratch - Machine learning</h5>
-                    <p>
-                        <a href="{% url 'ticktacktoe' %}">Learn more</a>
-                    </p>
+
                 </div>
                 <div class="col-2">
 
@@ -349,7 +354,7 @@
         <div class="container">
 
             <div class="section-title">
-                <h2>Contact</h2>
+                <h2 class="fa fa-envelope"> Contact</h2>
                 <p>Feel free to get in touch with me at anytime using any of the methods below.</p>
             </div>
 

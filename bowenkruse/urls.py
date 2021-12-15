@@ -9,5 +9,6 @@ urlpatterns = [
     path('ticktacktoe/', views.ticktacktoe, name='ticktacktoe'),
     path('onetwoseven/', views.onetwoseven, name='onetwoseven'),
     path('uxwork/', views.uxwork, name='uxwork'),
-    path('wesyncux/', views.wesyncUX, name='wesyncUX')
+    path('wesyncux/', views.wesyncUX, name='wesyncUX'),
+    path('underconstruction', views.underconstruction, name='underconstruction')
 ]

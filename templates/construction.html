@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oops</title>
+    {# Google fonts #}
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+          rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'bowenkruse/css/styles.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/jpeg" href="{% static 'bowenkruse/images/favicon.jpg' %}"
+
+</head>
+<body>
+<!-- ======= Header ======= -->
+<header id="header">
+    <div class="d-flex flex-column">
+
+        <div class="profile">
+            <img src="{% static 'bowenkruse/images/Profile.jpg' %}" alt="" class="side-image">
+            <h1 class="text-light"><a href="">Bowen Kruse</a></h1>
+        </div>
+
+        <nav id="navbar" class="nav-menu navbar">
+            <ul>
+                <li><a href="{% url 'index' %}" class="nav-link scrollto active"><i class="bx bx-home fa fa-home"></i>
+                    <span>Home</span></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="main">
+    <section id="ux-portfolio" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Page construction in progress</h2>
+                <p style="font-size: 15px">Thank you for your understanding</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>

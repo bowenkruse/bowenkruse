@@ -3,12 +3,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CSCI127 Programming Practice</title>
+    <title>Programming Practice</title>
     {# Google fonts #}
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
           rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{% static 'bowenkruse/css/styles.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 <!-- ======= Header ======= -->
@@ -21,7 +23,7 @@
 
         <nav id="navbar" class="nav-menu navbar">
             <ul>
-                <li><a href="{% url 'index' %}" class="nav-link scrollto active"><i class="bx bx-home"></i>
+                <li><a href="{% url 'index' %}" class="nav-link scrollto active"><i class="bx bx-home fa fa-home"></i>
                     <span>Home</span></a>
                 </li>
             </ul>
@@ -40,25 +42,38 @@
                     <h4>Uno</h4>
                     <p>Write a Python class called Converter that has two functions, one to convert an integer to a
                         roman numeral and second that converts the integer and converts it to the spelling of that said
-                    number (1 becomes "one"). On initialization, this class should take one parameter: the integer to be
-                    translated. </p>
+                        number (1 becomes "one"). On initialization, this class should take one parameter: the integer
+                        to be
+                        translated. </p>
                 </div>
                 <div class="main_column">
-                    <h4>Click for solution</h4>
                 </div>
             </div>
+
             <div class="row">
-                <div class="main_column">
+                <div class="side">
                     <h4>Dos</h4>
                     <p>Write a function that takes a string as a parameter, and ensures that any uses of parenthesis or
-                    quotations are properly terminated i.e. each opening quote needs an ending quote etc.</p>
+                        quotations are properly terminated i.e. each opening quote needs an ending quote etc.</p>
                 </div>
 
-                <div class="side">
-                    <h4>Click for solution</h4>
+                <div class="main_column">
                 </div>
-
             </div>
+
+            <div class="row">
+                <div class="side">
+                    <h4>Tres</h4>
+                    <p>Write a function that takes a 2D numpy array as a parameter, and checks for horizontal,
+                        vertical, and diagonal instances of elements that have n-1 of the same element in succession
+                        where n is the length of the rows of the array. I.e. In a four by four square array, find
+                        all instances of three matching elements in succession. </p>
+                </div>
+
+                <div class="main_column">
+                </div>
+            </div>
+
         </div>
     </section>
 </div>
