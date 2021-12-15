@@ -28,7 +28,8 @@ SECRET_KEY = 'django-insecure-e3kyia6o@8q@-@$7+anzul95-#odtn&1*aj^-v%xf5r)h)ybo8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['personal-site-env4.eba-mpjxggzf.us-west-2.elasticbeanstalk.com', 'personal-site-env4.eba-mpjxggzf.us-west-2.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['personal-site-env4.eba-mpjxggzf.us-west-2.elasticbeanstalk.com',
+                 '127.0.0.1']
 
 
 # Application definition
@@ -124,7 +125,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
-
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+]
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
