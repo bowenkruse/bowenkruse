@@ -1,0 +1,231 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CareerSync</title>
+    {# Google fonts #}
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+          rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'bowenkruse/css/styles.css' %}">
+</head>
+<body>
+<!-- ======= Header ======= -->
+<header id="header">
+    <div class="d-flex flex-column">
+
+        <div class="profile">
+            <img src="{% static 'bowenkruse/images/Profile.jpg' %}" alt="" class="side-image">
+            <h1 class="text-light"><a href="">Bowen Kruse</a></h1>
+        </div>
+
+        <nav id="navbar" class="nav-menu navbar">
+            <ul>
+                <li><a href="{% url 'index' %}" class="nav-link scrollto active"><i class="bx bx-home"></i>
+                    <span>Home</span></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="main">
+    <section id="ux-portfolio" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>UX/UI Design project: CareerSync</h2>
+            </div>
+
+            {# row 1 #}
+            <div class="row">
+                <div class="side">
+                    <h4>What is CareerSync?</h4>
+                    <p>CareerSync is a concept platform designed to satisfy CSCI 443 Course project requirements.
+                        The development process included following a series of UX Design stages as our wonderful
+                        professor, Dr. Laura Stanely, provided lectures and supplementary information throughout the
+                        duration of the semester. CareerSync is meant to be a platform in which users can manage their
+                        job hunting materials and utilize tools to make the process of finding a job more efficient.</p>
+                    <a href="https://spark.adobe.com/page/bJcnuWz6s0FvH/">Project's Adobe Spark page</a>
+                </div>
+                <div class="main_column">
+
+
+                </div>
+            </div>
+
+            {# row 2 #}
+            <div class="row">
+                <div class="side">
+                    <img src="{% static 'bowenkruse/images/Job-Search-Checklist.png' %}" alt="turnover image"
+                         width="95%">
+                </div>
+                <div class="main_column">
+                    <h6>The Problem</h6>
+                    <p style="font-size: 19px">As the world begins to ease its way back to a new normal, millions of
+                        Americans are quitting
+                        their jobs in search for new opportunities. At the same time, millions of people who graduated
+                        in the first years of the Covid-19 pandemic and soon to be college graduates are begging to look
+                        to start their careers. With thousands of different ways to find and apply for jobs, it's
+                        impossible for individuals to organize and track their job search activities. Pandemic aside,
+                        on average it takes between 100 and 200 job applications to get just one job offer! If
+                        successful, this web platform will allow individuals who are looking to gain employment and
+                        organizations such as career coaching companies to monitor application status's, set reminders
+                        for follow-ups and interviews, and view statistics about their job search that will allow them
+                        to make better decisions in their hunt for employment.</p>
+                </div>
+            </div>
+
+
+            {# row 3 #}
+            <div class="row">
+                <div class="side">
+                    <h6>Tools used</h6>
+                    <p style="font-size: 19px">During this project, I was able to utilize a really awesome set of
+                        tools and pieces of software that I thought were genuinely really impressive. Most of these were
+                        recommended by Dr. Laura Stanely specifically throughout the development process, some I sourced
+                        myself. If the tools required additional lecturing and explanation, there was an accompanying
+                        demonstration video produced by the courses Teaching Assistant, Buwani Manuweera.
+                    </p>
+                    <p style="font-size: 19px">The first and most essential was Adobe Spark, where I developed my report
+                        for each
+                        of the six phases of the design process. Next during the Empathize Stage, I used Google Forms in
+                        addition to Zoom to complete information gathering tasks. With this information I needed to
+                        fill out empathy maps for each of the surveyed individuals using the provided templates. For
+                        this
+                        I used Miro, which allows manipulation of PDF documents like no other service I've found.
+                    </p>
+                    <p style="font-size: 19px">During the
+                        ideation stage, I used Coggle to complete a mind mapping process. During the prototyping stage I
+                        used
+                        Adobe Color to concept board color schemes for the CareerSync platform prototype. I used Mockitt
+                        to create a high fidelity prototype, and classic pen and paper to create my low-fidelity
+                        prototype
+                        sketches. During the testing phase I again used my high fidelity prototype along with a timer,
+                        and
+                        an assistant to gather usability heuristics data.</p>
+                </div>
+                <div class="main_column">
+                    <img src="{% static 'bowenkruse/images/logos.jpg' %}" alt="" width="95%">
+                </div>
+            </div>
+
+            {# row 3 #}
+            <div class="row">
+                <div class="side">
+
+                    <img src="{% static 'bowenkruse/images/Persona.jpg' %}" alt="Persona Graphic" width="95%">
+                </div>
+                <div class="main_column">
+                    <h6>Getting to know the users</h6>
+                    <p style="font-size: 19px">The objective of this stage was to get to know a set of users and try to
+                        understand who they are, and what their needs and problems are. For this, I interviewed a
+                        relatively diverse set of people that were all actively searching for a new source of employment
+                        or were recently hired for their current position. For each of these users using a survey and
+                        additional
+                        expanding conversations the following topics were addressed:</p>
+                    <ul style="font-size: 17px">
+                        <li>Age</li>
+                        <li>Gender</li>
+                        <li>Highest level of education</li>
+                        <li>Current employment status</li>
+                        <li>Years of professional work experience</li>
+                        <li>What industry or sector they work in or plan to work in</li>
+                        <li>How they found their current or most recent employment position</li>
+                        <li>Amount of applications submitted during last job search, and the outcome of this search</li>
+                        <li>The amount of unique industries in their last round of job applications</li>
+                        <li>Preferred method of communication with recruiters/hiring managers</li>
+                        <li>The largest challenge of hte job application process not including gaining employment</li>
+                        <li>How they keep organized during a job search</li>
+                        <li>What their resume/cover letter/portfolio formatting usually looks like</li>
+                        <li>How they keep track of which jobs they have applied for</li>
+                    </ul>
+
+                    <p style="font-size: 19px">During this stage a single persona was created to help personify the most
+                        common set of user characteristics and features found during the survey. This was used alongside
+                        other
+                        tools such as a Business Model Canvas to refine and define what parts of our users information
+                        would be most important during the rest of the design process.
+                    </p>
+                </div>
+            </div>
+
+
+            {# row 4 #}
+            <div class="row">
+                <div class="side">
+                    <h6>Finding structure in the data</h6>
+                    <p style="font-size: 19px">Now that I had this overwhelming surplus of information about my users
+                        and their needs
+                        it was time to distill the data into some possible solutions. This was done using a set of
+                        creativity techniques such as mind-mapping and simple general brainstorming. Mind-mapping really
+                        helped to solidify what features what be required to provide a solution, and how they would
+                        interact with one-another.
+                    </p>
+                </div>
+                <div class="main_column">
+                    <img src="{% static 'bowenkruse/images/mindmap.png' %}" alt="mind mapping image" width="95%">
+                </div>
+            </div>
+
+            {# row 5 #}
+            <div class="row">
+                <div class="side">
+                    <img src="{% static 'bowenkruse/images/prototype.png' %}" alt="prototype image" width="95%">
+                </div>
+                <div class="main_column">
+                    <h6>Putting this data to work</h6>
+                    <p style="font-size: 19px">Finally it was time to build something. I knew that because of my lack of
+                        design
+                        experience I would need to produce a large quantity of possible prototypes. Therefore, after
+                        creating a User Flow diagram to solidify how users might navigate the functionalities of the
+                        site
+                        I began sketchy dozens of low fidelity prototypes. This was an activity that confirmed the idea
+                        that I should never pursue a career as an artist. However, after discarding the more obviously
+                        bad
+                        designs I found myself with a set of views that could really define a decent site. With these
+                        views
+                        I used Mockitt to create an interactive prototype, along with colors and inspirations from a
+                        concept
+                        boarding activity concluding with what I would consider a rather impressive prototype.
+                    </p>
+                    <p style="font-size: 19px">Then, one by one, I went through each of the usability heuristics and
+                        UX laws and made sure that my site abode by each one. This somewhat simple process ended up
+                        having
+                        a profound impact on the final prototype. This is a process that I will always include in my
+                        projects
+                        whether they be UX/UI Design or not. </p>
+
+                </div>
+            </div>
+
+            {# row 6 #}
+            <div class="row">
+                <div class="side">
+                    <h6>Does this thing work?</h6>
+                    <p style="font-size: 19px">For my final stage I needed to verify that this thing actually worked. Or
+                        more
+                        specifically, what parts of this prototype were proficiently 'usable'. For this I created a
+                        list of tasks for users to complete using my interactive prototype. Tasks such as registering
+                        and navigating to a home page, or using a feature starting from the home page. Each of the
+                        tasks was meant to measure how usable each of the functionalities were, and to verify that the
+                        prototype fit each of the previously mentioned usability heuristics and UX laws. I tracked
+                        the amount of time and clicks it took users to complete the tasks and how many pages the user
+                        needed to look before they found the task objective. Through this process I was able to discover
+                        that there were certain features such as documentation and or linking other career platforms to
+                        the user's profile that were taking significantly longer. If I were to continue development on
+                        this platform I would loop back to the ideation phase and try to come up with solutions to
+                        minimize these statistics.
+                    </p>
+                </div>
+                <div class="main_column">
+                    <img src="{% static 'bowenkruse/images/tasktesting.png' %}" alt="task testing graph" width="95%">
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>
+
+</body>
+</html>

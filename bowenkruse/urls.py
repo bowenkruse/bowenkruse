@@ -7,5 +7,7 @@ urlpatterns = [
     path('biocalc/', views.bioCalc, name='biocalc'),
     path('sudoku/', views.sudoku, name='sudoku'),
     path('ticktacktoe/', views.ticktacktoe, name='ticktacktoe'),
-    path('onetwoseven/', views.onetwoseven, name='onetwoseven')
+    path('onetwoseven/', views.onetwoseven, name='onetwoseven'),
+    path('uxwork/', views.uxwork, name='uxwork'),
+    path('wesyncux/', views.wesyncUX, name='wesyncUX')
 ]

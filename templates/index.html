@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
           rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'bowenkruse/css/styles.css' %}">
 
 </head>
 
@@ -19,7 +19,7 @@
     <div class="d-flex flex-column">
 
         <div class="profile">
-            <img src="{% static 'images/Profile.jpg' %}" alt="" class="side-image">
+            <img src="{% static 'bowenkruse/images/Profile.jpg' %}" alt="" class="side-image">
             <h1 class="text-light"><a href="#hero">Bowen Kruse</a></h1>
 
         </div>
@@ -56,19 +56,16 @@
                     <div class="side">
                         <h4>Background</h4>
                         <p>I’m a Senior at Montana State University studying Computer Science, with a background in pure
-                            mathematics, and applied aviation sciences. I’ve successfully lead teams in numerous global
+                            mathematics, and applied aviation sciences. I’ve successfully led teams in numerous global
                             coding competitions on three continents. I’ve also been an active member of ACM and IEEE
                             since 2017.</p>
                     </div>
 
                     <div class="main_column">
-                        <h4>Experience</h4>
-                        <p>Data driven solutions are the future and will continue to define our industry. With hundreds
-                            of hours logged
-                            as a private pilot, I’ve gained an appreciation for the technology required to enable the
-                            world to function. I’ve worked in multiple law-related establishments and learned to seek
-                            out new ways to apply technology to increase efficiency and create solutions for a variety
-                            of industries. There is always a way to use data to work smarter.</p>
+                        <h4>Experience - overview</h4>
+                        <p>As a private pilot, I’ve gained an appreciation for the technology required to enable the
+                            world to function. My work has allowed me to experience working in a diverse set of
+                            environments utilizing a variety of development methods.</p>
                     </div>
                 </div>
 
@@ -205,8 +202,8 @@
                         Like many computer vision applications, my project started with understanding how the images
                         were captured and processed might affect models created from the data. I then created python
                         programs to analyze possible causes of detection imbalances from existing models and presented
-                        my findings. My data research lead to real conversation and change the image capturing system
-                        and my models continued training with hopes for deployment after the end of my internship.
+                        my findings. My data research lead to real conversation and change.
+                        My models continued training with hopes for deployment after the end of my internship.
                     </p>
                 </div>
                 <div class="col-2">
@@ -263,7 +260,7 @@
                         Discovery, Tone Analyzer, Assistant, and Natural Language Understanding for processing and
                         analysis, Bo can answer most of the questions that reading through the entire site could. Bo
                         will continue to grow and learn as the complexity of his algorithm increases. Give Bo the
-                        Chatbot a try at the bottom left corner of the site.
+                        Chatbot a try in the bottom left corner of the site.
                     </p>
                 </div>
                 <div class="col-2">
@@ -273,10 +270,17 @@
                     </p>
                 </div>
                 <div class="col-2">
-                    <h5>WeSync</h5>
+                    <h5>WeSync - UX/UI Design and Web Development</h5>
                     <p>
-                        In progress ...
+                        WeSync is an academic networking platform that I developed in collaboration with two other
+                        students to fulfill course project requirements for CSCI 331 at Montana State University. The
+                        development process included a full UX/UI design process. The
+                        prototype available at the link below allows users to create profiles, rating other users, add
+                        courses, join groups in courses, message other users, and more. This prototype will not be
+                        developed any further.
                     </p>
+                    <a href="http://wesync-django-env4.eba-s3uhhsqf.us-west-2.elasticbeanstalk.com/login/">Demo</a> or <a href="{% url 'wesyncUX' %}">Learning more about the design process</a>
+
                 </div>
             </div>
             <div class="row">
@@ -317,6 +321,24 @@
                     <p>
                         <a href="{% url 'wumpus' %}">Learn more</a>
                     </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    <h5>CareerSync - UX/UI Design</h5>
+                    <p>
+                        <a href="{% url 'uxwork' %}">Learn more about the process</a>
+                    </p>
+                </div>
+                <div class="col-2">
+                    <h5>Reinforcement learning from scratch - Machine learning</h5>
+                    <p>
+                        <a href="{% url 'ticktacktoe' %}">Learn more</a>
+                    </p>
+                </div>
+                <div class="col-2">
+
                 </div>
             </div>
         </div>

@@ -24,3 +24,11 @@ def ticktacktoe(request):
 
 def onetwoseven(request):
     return render(request, 'onetwoseven.html')
+
+
+def uxwork(request):
+    return render(request, 'ux.html')
+
+
+def wesyncUX(request):
+    return render(request, 'weSyncUX.html')

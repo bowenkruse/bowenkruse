@@ -1,0 +1,185 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WeSync</title>
+    {# Google fonts #}
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+          rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'bowenkruse/css/styles.css' %}">
+</head>
+<body>
+<!-- ======= Header ======= -->
+<header id="header">
+    <div class="d-flex flex-column">
+
+        <div class="profile">
+            <img src="{% static 'bowenkruse/images/Profile.jpg' %}" alt="" class="side-image">
+            <h1 class="text-light"><a href="">Bowen Kruse</a></h1>
+        </div>
+
+        <nav id="navbar" class="nav-menu navbar">
+            <ul>
+                <li><a href="{% url 'index' %}" class="nav-link scrollto active"><i class="bx bx-home"></i>
+                    <span>Home</span></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="main">
+    <section id="ux-portfolio" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>UX/UI Design portion of the WeSync platform</h2>
+            </div>
+
+            {# row 1 #}
+            <div class="row">
+                <div class="side">
+                    <h4>What is WeSync?</h4>
+                    <p>WeSync is a platform developed to satisfy CSCI 331 Course project requirements. The
+                        functionality of WeSync could be compared to an academic version of LinkedIn, but with a twist.
+                        Users can message one-another, add courses, join groups in courses, message other users, but
+                        most importantly rate one another.The development process included following a series of UX
+                        Design stages which will be covered on this page.
+                    </p>
+                    <a href="http://wesync-django-env4.eba-s3uhhsqf.us-west-2.elasticbeanstalk.com/login/">Demo the
+                        platform</a>
+                </div>
+                <div class="main_column">
+                </div>
+            </div>
+
+            {# row 2 #}
+            <div class="row">
+                <div class="side">
+                    <img src="{% static 'bowenkruse/images/Workplace-collaboration.jpg' %}" alt="turnover image"
+                         width="95%">
+                </div>
+                <div class="main_column">
+                    <h6>The Problem</h6>
+                    <p style="font-size: 19px">Learning to work in groups and collaborate is an important experience
+                        that most
+                        university experience. From all parts of academia from software to business to writing, working
+                        in groups to complete course projects is also incredibly common. However, most students find out
+                        quite quickly that the main challenge in group projects is not the assignment itself, but
+                        learning
+                        to work well with the teammates available. Furthermore, the current/recent pandemic has pushed
+                        much of this collaboration online, bringing new challenges such as networking. WeSync aims to
+                        help
+                        students connect with peers that they can then collaborate successfully with while also allowing
+                        students to be held accountable for their abilities to collaborate.</p>
+                </div>
+            </div>
+
+
+            {# row 3 #}
+            <div class="row">
+                <div class="side">
+                    <h6>Tools used</h6>
+                    <p style="font-size: 19px">During this project, an incredibly wide variety of tools and platforms
+                        were used to
+                        produce the final prototype available at the above 'demo' link. Github was used for version
+                        control and to set up task assignments. Adobe XD was used to create an interactive prototype of
+                        what we thought the platform should look like during our UX/UI design process. Django was the
+                        chosen web framework that was used to develop the demo. SQlite was used to save all the data
+                        for our models, such as users, messages, courses and multiple other database entities. Ajax
+                        was used to make our website more dynamic, including dynamic searches, and asynchronous
+                        updating of pages. Bootstrap was used for UI development, Docker was used as the projects
+                        development containerization service, and Google's Cloud Run was used as deployment (The demo
+                        available above is hosted on AWS, NOT Cloud Run.)
+                    </p>
+                </div>
+                <div class="main_column">
+                    <img src="{% static 'bowenkruse/images/wesynclogo.png' %}" alt="" width="95%">
+                </div>
+            </div>
+
+            {# row 3 #}
+            <div class="row">
+                <div class="side">
+                    <img src="{% static 'bowenkruse/images/10-what-is-ux-design.jpg' %}" alt="Persona Graphic" width="95%">
+                </div>
+                <div class="main_column">
+                    <h6>The UX/UI Design process</h6>
+                    <p style="font-size: 19px">The UX/UI Design process of WeSync included each of the following
+                        stages being followed.</p>
+                    <ol style="font-size: 19px">
+                        <li>Empathize - Research your users</li>
+                        <li>Define - State Your user's needs and problems</li>
+                        <li>Ideate - Challenge assumptions and create ideas</li>
+                        <li>Prototype - Start to create solutions</li>
+                        <li>Test - Try your solutions out</li>
+                    </ol>
+
+                </div>
+            </div>
+
+
+            {# row 4 #}
+            <div class="row">
+                <div class="side">
+                    <h6>Developing the database schema</h6>
+                    <p style="font-size: 19px">One of the reasons Django was chosen as the web framework to use was that Django
+                        out of the box as an incredibly powerful object relational mapper, which essentially makes
+                        working with databases easier for object-orientated brains.
+                    </p>
+                    <p style="font-size: 19px">By defining our models, and therefore database schema using this ER
+                    diagram it made it way easier to then turn our ideas into concepts.</p>
+                </div>
+                <div class="main_column">
+                    <img src="{% static 'bowenkruse/images/schema.jpeg' %}" alt="mind mapping image" width="95%">
+                </div>
+            </div>
+
+            {# row 5 #}
+            <div class="row">
+                <div class="side">
+                    <img src="{% static 'bowenkruse/images/MTV-Diagram.png' %}" alt="prototype image" width="95%">
+                </div>
+                <div class="main_column">
+                    <h6>Putting an engine in the truck</h6>
+                    <p style="font-size: 19px">We had the gas (the databases) now we needed to build the engine of this web
+                        application. This included creating three django applications in the WeSync project, Course,
+                        User Profile, and Message. Each of these apps then were developed to be fully functional
+                        according to the model, template, view architecture.
+                    </p>
+                    <p style="font-size: 19px">The largest challenges of this stage were finding ways for the applications to
+                    communicate with one-another effectively. Using tools just as Ajax I was able to create a
+                    level of functionality that I'm actually quite proud of. During the development phase, there
+                    were many reality checks were hopes and dreams were tuned to be a bit more realistic
+                    with the development timeframe that we had (3 weeks). </p>
+
+                </div>
+            </div>
+
+            {# row 6 #}
+            <div class="row">
+                <div class="side">
+                    <h6>Cool it works on your laptop, how do I put it on the internet?</h6>
+                    <p style="font-size: 19px">For deployment of our prototype we chose to create a custom docker image and to
+                        run that image on Google Cloud's Cloud Run platform. This service was chosen from the many
+                        because of its support of containerized applications and expandability. Additionally, as
+                        a developer I liked the idea that in the future if need be, Cloud Run would interface with
+                        other Google products very well.
+                    </p>
+                    <p style="font-size: 19px">It is important to note that the demo available at the link above
+                    is not hosted on Google Cloud's Cloud Run platform. Instead, a simplified version of the site
+                    was moved to AWS's Beanstalk hosting service for affordability purposes. Because it is only a
+                    lightweight demo there was no need to pay for Google's more expensive services.</p>
+                </div>
+                <div class="main_column">
+                    <img src="{% static 'bowenkruse/images/cloudrunlogo.jpg' %}" alt="task testing graph" width="95%">
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
